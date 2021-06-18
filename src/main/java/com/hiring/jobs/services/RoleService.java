@@ -5,7 +5,7 @@
  */
 package com.hiring.jobs.services;
 
-import com.hiring.jobs.entity.TblRole;
+import com.hiring.jobs.entitiy.TblRole;
 import com.hiring.jobs.interfaces.RoleInterface;
 import com.hiring.jobs.repository.RoleRepository;
 import java.util.Optional;
@@ -36,6 +36,7 @@ public class RoleService implements RoleInterface{
     public Optional<TblRole> getRoleById(Integer roleId) {
         return roleRepo.findById(roleId);
     }
+
     
      
 }

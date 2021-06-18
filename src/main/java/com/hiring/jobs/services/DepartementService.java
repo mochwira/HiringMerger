@@ -5,7 +5,7 @@
  */
 package com.hiring.jobs.services;
 
-import com.hiring.jobs.entity.TblDepartement;
+import com.hiring.jobs.entitiy.TblDepartement;
 import com.hiring.jobs.interfaces.DepartementInterface;
 import com.hiring.jobs.repository.DepartementRepository;
 import java.util.Optional;
@@ -35,8 +35,7 @@ public class DepartementService implements DepartementInterface{
     public Optional<TblDepartement> getDepartementById(Integer departementId) {
        return departementRepository.findById(departementId);
     }
-
-    
+  
 
    
     

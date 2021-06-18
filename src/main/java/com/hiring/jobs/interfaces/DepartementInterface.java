@@ -6,7 +6,7 @@
 package com.hiring.jobs.interfaces;
 
 
-import com.hiring.jobs.entity.TblDepartement;
+import com.hiring.jobs.entitiy.TblDepartement;
 import java.util.Optional;
 
 /**

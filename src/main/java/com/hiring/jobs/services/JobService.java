@@ -6,7 +6,7 @@
 package com.hiring.jobs.services;
 
 
-import com.hiring.jobs.entity.TblJob;
+import com.hiring.jobs.entitiy.TblJob;
 import com.hiring.jobs.interfaces.JobInterfaces;
 import com.hiring.jobs.repository.JobRepository;
 import java.util.List;
@@ -50,5 +50,6 @@ public class JobService implements JobInterfaces{
     public void deleteJobById(Integer jobId) {
        this.jobRepo.deleteById(jobId);
     }
+
    
 }

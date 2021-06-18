@@ -5,7 +5,8 @@
  */
 package com.hiring.jobs.controller;
 
-import com.hiring.jobs.entity.TblRole;
+import com.hiring.jobs.entitiy.TblRole;
+import com.hiring.jobs.entitiy.TblUser;
 import com.hiring.jobs.services.UserService;
 
 import java.util.Optional;

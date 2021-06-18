@@ -5,7 +5,7 @@
  */
 package com.hiring.jobs.controller;
 
-import com.hiring.jobs.entity.TblJob;
+import com.hiring.jobs.entitiy.TblJob;
 import com.hiring.jobs.services.JobService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

@@ -5,7 +5,7 @@
  */
 package com.hiring.jobs.interfaces;
 
-import com.hiring.jobs.entity.TblApplicationStatus;
+import com.hiring.jobs.entitiy.TblApplicationStatus;
 import java.util.Optional;
 
 /**

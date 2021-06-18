@@ -5,6 +5,7 @@
  */
 package com.hiring.jobs.services;
 
+import com.hiring.jobs.entitiy.TblBiodata;
 import com.hiring.jobs.interfaces.BiodataInterface;
 import com.hiring.jobs.repository.BiodataRepository;
 import java.util.Optional;

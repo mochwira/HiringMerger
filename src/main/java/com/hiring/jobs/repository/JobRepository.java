@@ -6,7 +6,7 @@
 package com.hiring.jobs.repository;
 
 
-import com.hiring.jobs.entity.TblJob;
+import com.hiring.jobs.entitiy.TblJob;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

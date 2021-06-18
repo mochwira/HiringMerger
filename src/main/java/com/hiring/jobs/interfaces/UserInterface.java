@@ -6,6 +6,7 @@
 package com.hiring.jobs.interfaces;
 
 
+import com.hiring.jobs.entitiy.TblUser;
 import java.util.Optional;
 
 

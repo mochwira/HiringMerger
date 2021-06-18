@@ -5,6 +5,7 @@
  */
 package com.hiring.jobs.repository;
 
+import com.hiring.jobs.entitiy.TblApplication;
 import org.springframework.data.jpa.repository.Query;
 
 import org.springframework.data.repository.CrudRepository;

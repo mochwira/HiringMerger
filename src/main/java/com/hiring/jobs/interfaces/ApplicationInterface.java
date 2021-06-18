@@ -5,6 +5,7 @@
  */
 package com.hiring.jobs.interfaces;
 
+import com.hiring.jobs.entitiy.TblApplication;
 import java.util.Optional;
 
 /**

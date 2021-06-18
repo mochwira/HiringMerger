@@ -8,6 +8,15 @@
     <class>com.hiring.jobs.entity.TblDepartement</class>
     <class>com.hiring.jobs.entity.TblApplicationStatus</class>
     <class>com.hiring.jobs.entity.TblRole</class>
+    <class>com.hiring.jobs.entitiy.TblUser</class>
+    <class>com.hiring.jobs.entitiy.TblRole</class>
+    <class>com.hiring.jobs.entitiy.TblTest</class>
+    <class>com.hiring.jobs.entitiy.TblApplication</class>
+    <class>com.hiring.jobs.entitiy.TblBiodata</class>
+    <class>com.hiring.jobs.entitiy.TblApplicationStatus</class>
+    <class>com.hiring.jobs.entitiy.TblInterview</class>
+    <class>com.hiring.jobs.entitiy.TblJob</class>
+    <class>com.hiring.jobs.entitiy.TblDepartement</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/db_hiringjob?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
       <property name="javax.persistence.jdbc.user" value="root"/>

@@ -5,7 +5,7 @@
  */
 package com.hiring.jobs.controller;
 
-import com.hiring.jobs.entity.TblDepartement;
+import com.hiring.jobs.entitiy.TblDepartement;
 import com.hiring.jobs.services.DepartementService;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;

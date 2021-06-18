@@ -6,6 +6,7 @@
 package com.hiring.jobs.services;
 
 
+import com.hiring.jobs.entitiy.TblUser;
 import com.hiring.jobs.interfaces.UserInterface;
 import com.hiring.jobs.repository.UserRepository;
 
@@ -48,5 +49,6 @@ public class UserService implements UserInterface{
     public Optional<TblUser> findByEmailUser(String emailUser) {
        return userRepository.findByEmailUser(emailUser);
     }
+
     
 }

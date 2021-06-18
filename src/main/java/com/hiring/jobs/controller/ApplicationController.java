@@ -5,8 +5,10 @@
  */
 package com.hiring.jobs.controller;
 
-import com.hiring.jobs.entity.TblApplicationStatus;
-import com.hiring.jobs.entity.TblJob;
+import com.hiring.jobs.entitiy.TblApplication;
+import com.hiring.jobs.entitiy.TblApplicationStatus;
+import com.hiring.jobs.entitiy.TblJob;
+import com.hiring.jobs.entitiy.TblUser;
 import com.hiring.jobs.services.ApplicationService;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;

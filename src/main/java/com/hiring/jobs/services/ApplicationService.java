@@ -5,6 +5,7 @@
  */
 package com.hiring.jobs.services;
 
+import com.hiring.jobs.entitiy.TblApplication;
 import com.hiring.jobs.interfaces.ApplicationInterface;
 import com.hiring.jobs.repository.ApplicationRepository;
 import java.util.Optional;

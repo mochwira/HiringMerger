@@ -1,7 +1,7 @@
 package com.hiring.jobs.interfaces;
 
 
-import com.hiring.jobs.entity.TblRole;
+import com.hiring.jobs.entitiy.TblRole;
 import java.util.Optional;
 
 /*

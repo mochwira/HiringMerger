@@ -5,7 +5,7 @@
  */
 package com.hiring.jobs.services;
 
-import com.hiring.jobs.entity.TblApplicationStatus;
+import com.hiring.jobs.entitiy.TblApplicationStatus;
 import com.hiring.jobs.interfaces.ApplicationStatusInterface;
 import com.hiring.jobs.repository.ApplicationStatusRepository;
 import java.util.Optional;
@@ -46,7 +46,6 @@ public class ApplicationStatusService implements ApplicationStatusInterface {
     public Iterable<TblApplicationStatus> getApplicationStatusActive() {
         return appStatusRepository.getApplicationStatusActive();
     }
-
 
 
 }
