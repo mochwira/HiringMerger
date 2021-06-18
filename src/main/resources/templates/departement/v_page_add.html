@@ -1,0 +1,40 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    
+    <head th:insert="fragments/header.html :: head">
+    </head>
+
+    <body>
+        <div class="container">
+            <form th:action="@{/departement/insert}" th:object="${departementAdd}" method="POST">
+              </br>
+                  <h1>
+                      ADD DEPARTEMENT
+                      <span class="pull-right" right>
+                          <a th:href="@{/departement}" class="btn btn-success">Back to Departement</a>
+                          <button class="btn btn-success" type="submit"><span class="fab fa-save"></span> Save</button>
+                      </span>                
+                  </h1>            
+              </br>
+<!--                 <div class="form-group">
+                  <label>Id</label>
+                  <input type="text" th:field="*{id}"  class="form-control" placeholder="">
+                </div>     -->          
+
+                <div class="form-group">
+                  <label>Name</label>
+                  <input type="text" th:field="*{namaDepartement}"  class="form-control" placeholder="">
+                </div>
+                <div class="form-group">
+                  <label>Status</label>
+                  <input type="text" th:field="*{statusDepartement}" class="form-control" th:value="@{1}">
+                </div>
+            </form>
+
+        </div>
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+
+    </body>
+</html>

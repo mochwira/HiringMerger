@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Sidenav -->
+    <div th:fragment="sidenav">
+      <div class="col-md p-3 bg-light">
+        <div class="d-inline-flex flex-column align-items-center px-5 pt-2 text-white min-vh-100">
+          <a href="#" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-primary text-decoration-none">
+            <span class="fs-5 d-none d-sm-inline">Hiring Job</span>
+          </a>
+          <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+            <li class="nav-item">
+              <a href="#" class="nav-link align-middle px-0"> <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span> </a>
+            </li>
+            <li>
+              <a th:href="@{/status}" class="nav-link px-0 align-middle"> <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Application Status</span></a>
+            </li>
+            <li>
+              <a th:href="@{/role}" class="nav-link px-0 align-middle"> <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Role</span> </a>
+            </li>
+
+            <li>
+              <a th:href="@{/departement}" class="nav-link px-0 align-middle"> <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Departement</span> </a>
+            </li>
+
+            <li>
+              <a href="#" class="nav-link px-0 align-middle"> <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Job</span> </a>
+            </li>
+          </ul>
+          <hr />
+        </div>
+      </div>
+    </div>
+    <!-- End Side NaV -->
+  </body>
+</html>
