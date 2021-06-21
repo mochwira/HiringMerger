@@ -11,7 +11,13 @@ and open the template in the editor.
     </head>
 
     <body>
-        <div class="container">
+         <div class="row">
+            <div class="col-md-auto">
+            <div th:insert="fragments/sidenav.html :: sidenav"></div>
+            </div>
+            <div  class="col">
+            <div th:insert="fragments/navbar.html :: navbar"></div>
+            <div class="container">
             </br>
                 <h1>
                     Departement TABLE 
@@ -42,6 +48,10 @@ and open the template in the editor.
                 </tbody>
             </table>
         </div>
+            </div>
+        </div>
+        
+        
         <!-- Optional JavaScript; choose one of the two! -->
 
         <!-- Option 1: Bootstrap Bundle with Popper -->

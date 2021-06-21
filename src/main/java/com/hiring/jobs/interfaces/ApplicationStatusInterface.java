@@ -13,9 +13,8 @@ import java.util.Optional;
  * @author D
  */
 public interface ApplicationStatusInterface  {
-    Iterable<TblApplicationStatus> getAll(); 
-    Optional<TblApplicationStatus> getById(Integer id);
-    void deleteById(Integer id);
-    void save(TblApplicationStatus applicationStatus);
-    Iterable<TblApplicationStatus> getApplicationStatusActive(); 
+    void save(TblApplicationStatus status);
+    Iterable<TblApplicationStatus> getApplicationStatusActive();
+    public Optional<TblApplicationStatus> getApplicationStatusById(Integer statusId);
+//    public String getMaxFaqQuestion();
 }

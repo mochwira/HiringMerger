@@ -8,40 +8,51 @@ and open the template in the editor.
 <html xmlns:th="http://www.thymeleaf.org">
     
     <head th:insert="fragments/header.html :: head">
+        
     </head>
 
     <body>
-        <div class="container">
-            </br>
-                <h1>
-                    ROLE TABLE 
-                    <span class="pull-right" right>
-                        <a th:href="@{/role/add}" class="btn btn-success">Add Role</a>
-                    </span>                
-                </h1>            
-            </br>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">No</th>
-                        <th scope="col">First Name</th>
-                        <th scope="col">Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr th:each="role, status : ${roles}">
-                        <td th:text="${status.index+1}"></td>
-                        <!-- <td th:text="${role.Id}"></td> -->
-                        <td th:text="${role.NamaRole}"></td>
-                        <td>
-                            <a th:href="@{/role/edit/}+${role.roleId}" class="btn btn-primary">Edit</a> 
-                            <a th:href="@{/role/remove/}+${role.roleId}" class="btn btn-danger">Delete</a>
-                        </td>
-                        
-                    </tr>
-                </tbody>
-            </table>
+        <div class="row">
+            <div class="col-md-auto">
+            <div th:insert="fragments/sidenav.html :: sidenav"></div>
+            </div>
+            <div  class="col">
+            <div th:insert="fragments/navbar.html :: navbar"></div>
+            <div class="container">
+                
+                </br>
+                    <h1>
+                        ROLE TABLE 
+                        <span class="pull-right" right>
+                            <a th:href="@{/role/add}" class="btn btn-success">Add Role</a>
+                        </span>                
+                    </h1>            
+                </br>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:each="role, status : ${roles}">
+                            <td th:text="${status.index+1}"></td>
+                            <!-- <td th:text="${role.Id}"></td> -->
+                            <td th:text="${role.NamaRole}"></td>
+                            <td>
+                                <a th:href="@{/role/edit/}+${role.roleId}" class="btn btn-primary">Edit</a> 
+                                <a th:href="@{/role/remove/}+${role.roleId}" class="btn btn-danger">Delete</a>
+                            </td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </div>
         </div>
+        
         <!-- Optional JavaScript; choose one of the two! -->
 
         <!-- Option 1: Bootstrap Bundle with Popper -->

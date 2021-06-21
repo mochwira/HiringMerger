@@ -19,33 +19,22 @@ import org.springframework.stereotype.Service;
 @Service
 public class ApplicationStatusService implements ApplicationStatusInterface {
 
-    @Autowired
-    private ApplicationStatusRepository appStatusRepository;
+     @Autowired
+    private ApplicationStatusRepository appStatusRepo;
     
     @Override
-    public Iterable<TblApplicationStatus> getAll() {
-        return appStatusRepository.findAll();
+    public void save(TblApplicationStatus status) {
+        this.appStatusRepo.save(status);
     }
 
     @Override
-    public Optional<TblApplicationStatus> getById(Integer id) {
-        return appStatusRepository.findById(id);
-    }
-
-    @Override
-    public void deleteById(Integer id) {
-        appStatusRepository.deleteById(id);
-    }
-
-    @Override
-    public void save(TblApplicationStatus applicationStatus) {
-       appStatusRepository.save(applicationStatus);
+    public Optional<TblApplicationStatus> getApplicationStatusById(Integer statusId) {
+        return appStatusRepo.findById(statusId);
     }
 
     @Override
     public Iterable<TblApplicationStatus> getApplicationStatusActive() {
-        return appStatusRepository.getApplicationStatusActive();
+      return appStatusRepo.getApplicationStatusActive(); 
     }
-
 
 }

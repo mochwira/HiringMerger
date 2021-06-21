@@ -69,6 +69,10 @@ public class TblApplicationStatus implements Serializable {
         this.status = status;
     }
 
+    public TblApplicationStatus(Integer statusId, String namaStatus, TblApplicationStatus status) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public Integer getStatusId() {
         return statusId;
     }
@@ -125,6 +129,10 @@ public class TblApplicationStatus implements Serializable {
     @Override
     public String toString() {
         return "com.hiring.jobs.entitiy.TblApplicationStatus[ statusId=" + statusId + " ]";
+    }
+
+    public void setStatus(TblApplicationStatus status) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

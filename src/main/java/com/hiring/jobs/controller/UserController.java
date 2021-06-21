@@ -36,10 +36,10 @@ public class UserController {
     @Autowired
     private UserService userService;
     
-    @GetMapping("/")
-    public String index(Model model) {
-        model.addAttribute("index", "index");
-        return "index.html";
+    @GetMapping("/login")
+    public String index() {
+//  model.addAttribute("index", "index");
+        return "login.html";
     }
 
 //    @RequestMapping(value = "/login")
@@ -51,7 +51,7 @@ public class UserController {
 //        
 //        return "v_page_login";
 //    }
-    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    @RequestMapping(value = "/auth", method = RequestMethod.POST)
     public String log(
             @RequestParam(value = "emailUser", required = false) String emailUser,
             @RequestParam(value = "passwordUser", required = false) String passwordUser
@@ -66,16 +66,16 @@ public class UserController {
 
         if (passwordUser.equals(password)) {
             if(namaRole.equalsIgnoreCase("admin")){
-                return "redirect:/dashboardAdmin";
+                return "redirect:/role/v_page.html";
             } else if(namaRole.equalsIgnoreCase("hrd")) {
-                return "redirect:/dashboardHRD";
+                return "redirect:/job/jobpage";
             } else
-                return "redirect:/dashboardCandidate";
+                return "redirect:/biodata/biodata_add.html";
             
         } else {
             System.out.println("password salah");
         }
-        return "redirect:/dashboard";
+        return "redirect:/login.html";
         
     }   
     

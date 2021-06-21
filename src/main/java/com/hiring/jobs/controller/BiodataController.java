@@ -34,7 +34,7 @@ public class BiodataController {
 //        
         TblBiodata biodataCrud = new TblBiodata();
 
-        model.addAttribute("departementAdd", biodataCrud);
+        model.addAttribute("biodataAdd", biodataCrud);
         return "biodata/biodata_add.html";
     }
 

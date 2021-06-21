@@ -19,7 +19,7 @@ and open the template in the editor.
         <hr>
         <h2>job Employee</h2>
 
-        <form action="#" th:action="@{/savejob}" th:object="${job}" method="POST">
+        <form action="#" th:action="@{/saveJob}" th:object="${saveJob}" method="POST">
 
             <!-- Add hidden form field to handle update -->
             <input type="hidden" th:field="*{jobId}" />
