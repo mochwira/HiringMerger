@@ -5,6 +5,7 @@
  */
 package com.hiring.jobs.controller;
 
+
 import com.hiring.jobs.entitiy.TblJob;
 import com.hiring.jobs.services.JobService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +23,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class JobController {
     
+    //Apakah servicenya di tambah yang departement ? departementService
     @Autowired
     private JobService jobService;
 
@@ -29,6 +31,7 @@ public class JobController {
     @GetMapping("/job")
     public String viewHomePage(Model model) {
         model.addAttribute("listJob", jobService.getAllJob());
+        //model.addAttribute("departJob", jobService.getDepartementById(Integer departementId));
         return "/job/jobpage";
     }
 

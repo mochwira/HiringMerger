@@ -5,6 +5,7 @@
  */
 package com.hiring.jobs.interfaces;
 
+import com.hiring.jobs.entitiy.TblDepartement;
 import com.hiring.jobs.entitiy.TblJob;
 import java.util.List;
 import java.util.Optional;
@@ -17,5 +18,6 @@ public interface JobInterfaces {
    List <TblJob> getAllJob();
    void saveJob(TblJob job);
    TblJob getJobById(Integer jobId);
+   //TblDepartement getDepartementById(Integer departementId);
    void deleteJobById(Integer jobId);
 }

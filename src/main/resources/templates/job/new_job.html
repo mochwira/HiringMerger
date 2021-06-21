@@ -19,11 +19,16 @@ and open the template in the editor.
         <h2>Save job</h2>
 
         <form th:action="@{/saveJob}" th:object="${job}" method="POST">
-            <input type="text" th:field="*{namaJob}" placeholder="Nama Job" class="form-control mb-4 col-4">
+            
+            <input type="hidden" th:field="*{jobId}" />
+            
+            <input type="hidden" th:field="*{departementId}" />
+            
+            <input type="text" th:field="*{jobNama}" placeholder="Nama Job" class="form-control mb-4 col-4">
 
-            <input type="text" th:field="*{kriteriaJob}" placeholder="Kriteria Job" class="form-control mb-4 col-4">
+            <input type="text" th:field="*{jobKriteria}" placeholder="Kriteria Job" class="form-control mb-4 col-4">
 
-            <input type="text" th:field="*{deskripsiJob}" placeholder="Deskripsi Job" class="form-control mb-4 col-4">
+            <input type="text" th:field="*{jobDeskripsi}" placeholder="Deskripsi Job" class="form-control mb-4 col-4">
 
             <button type="submit" class="btn btn-info col-2"> Save Job</button>
         </form>
@@ -31,7 +36,7 @@ and open the template in the editor.
         <hr>
 
         <!--kek nya ini salah-->
-        <a th:href="@{/jobpage}"> Back to Job List</a>
+        <a th:href="@{/job}"> Back to Job List</a>
     </div>
 </body>
 

@@ -6,6 +6,7 @@
 package com.hiring.jobs.services;
 
 
+import com.hiring.jobs.entitiy.TblDepartement;
 import com.hiring.jobs.entitiy.TblJob;
 import com.hiring.jobs.interfaces.JobInterfaces;
 import com.hiring.jobs.repository.JobRepository;
@@ -21,6 +22,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class JobService implements JobInterfaces{
 
+    //mungkin di tambah pakai reposiotri dari departement id
     @Autowired
     private JobRepository jobRepo;
     
@@ -28,6 +30,7 @@ public class JobService implements JobInterfaces{
     public List<TblJob> getAllJob() {
         return jobRepo.findAll(); 
     }
+    
 
     @Override
     public void saveJob(TblJob job) {
@@ -50,6 +53,13 @@ public class JobService implements JobInterfaces{
     public void deleteJobById(Integer jobId) {
        this.jobRepo.deleteById(jobId);
     }
+
+//    @Override
+//    public TblDepartement getDepartementById(Integer departementId) {
+//        this.jobRepo.getDepartementById(departementId);
+//        return null;
+//
+//    }
 
    
 }

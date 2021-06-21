@@ -102,7 +102,7 @@ public class RoleController {
         Optional<TblRole> roles = roleService.getRoleById(roleId);
         Integer Id = roles.get().getRoleId();
         String namaRole = roles.get().getNamaRole();
-        Boolean statusRole = true;
+        Boolean statusRole = false;
         
         TblRole role = new TblRole(roleId, namaRole, statusRole);
         role.setRoleId(roleId);

@@ -23,19 +23,21 @@ and open the template in the editor.
 
             <!-- Add hidden form field to handle update -->
             <input type="hidden" th:field="*{jobId}" />
+            
+            <input type="hidden" th:field="*{departementId}" />
 
-            <input type="text" th:field="*{namaJob}" class="form-control mb-4 col-4">
+            <input type="text" th:field="*{jobNama}" class="form-control mb-4 col-4">
 
-            <input type="text" th:field="*{kriteriaJob}" class="form-control mb-4 col-4">
+            <input type="text" th:field="*{jobKriteria}" class="form-control mb-4 col-4">
 
-            <input type="text" th:field="*{deskripsiJob}" class="form-control mb-4 col-4">
+            <input type="text" th:field="*{jobDeskripsi}" class="form-control mb-4 col-4">
 
             <button type="submit" class="btn btn-info col-2"> Update Job</button>
         </form>
 
         <hr>
 
-        <a th:href="@{/jobpage}"> Back to job List</a>
+        <a th:href="@{/job}"> Back to job List</a>
     </div>
 </body>
 
